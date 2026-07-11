@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My E-commerce Website</title>
+    </head>
+    <body>
+        <h1>🛒 My Store </h1>
+<a href="/login">Login</a> |
+<a href="/signup">Signup</a>
+<a href="/cart">Cart</a>
+<a href="/orders">Orders</a>
+<a href="/add_product">Add Product</a>
+
+<hr>
+
+<ul>
+{% for p in products %}
+<li>
+{{p[1]}} - ₹{{p[2]}}
+<a href="/add_to_cart/{{p[0]}}">Add to Cart</a>
+</li>
+{% endfor %}
+</ul>
+
+<hr>
+
+<h3>Contact Us </h3>
+<p>Have questions or need assistance? Reach out to us!</p>
+<p>📞 <a href="tel:+919023884496">+91 90238 84496</a> </p>
+<p> <a href="https://www.instagram.com/_.harshil._98" target="_blank">Instagram</a> </p>
+
+<!-- Whatsapp Button -->
+<a href="https://wa.me/919023884496" target="_blank"> 💬 Chat with us on WhatsApp
+</a>
+
+    </body>
+
+</html>
